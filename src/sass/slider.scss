@@ -1,0 +1,141 @@
+.axit-hero {
+    background-image: url("../images/hero-slider.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 106px 0px 137px;
+    position: relative;
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+    }
+    &::before{
+        content: '';
+        background-color: $black;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .hero-logo{
+        margin-bottom: 27px;
+        img{
+            width: 175px;
+            @include media-breakpoint-down(sm){
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+    .hero-content-block{
+        h1{
+            font-size: 36px;
+            color: $white;
+            margin-bottom: 0;
+            @include media-breakpoint-down(lg){
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 24px;
+            }
+            @include media-breakpoint-down(xs){
+                font-size: 20px;
+            }
+        }
+        span{
+            background-color: $white;
+            width: 70px;
+            height: 2px;
+            display: block;
+            margin: 37px 0;
+            @include media-breakpoint-down(sm){
+                margin: 20px 0;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            color: $white;
+            opacity: .6;
+        }
+        
+    }
+    button{
+        margin-top: 37px;
+        border: 2px solid $white;
+        color: $white;
+        font-size: 15px;
+        font-family: $open-sans;
+        font-weight: 600;
+        padding: 10px 30px;
+        &:hover{
+            background-color: $white;
+            color: $black;
+        }
+        @include media-breakpoint-down(md){
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .axit-business-form{
+        width: 360px;
+        float: right;
+        @include media-breakpoint-down(md){
+            width: 100%;
+            float: none;
+        }
+        .axit-business-form-title{
+            background-color: #f5f5f5;
+            padding: 16px 10px;
+            border-radius: 5px 5px 0px 0px;
+            h2{
+                font-size: 20px;
+                color: #333333;
+                font-weight: bold;
+                font-family: $open-sans;
+                text-align: center;
+                span{
+                    color: $orange;
+                    font-weight: bold;
+                    font-family: $open-sans;
+                }
+            }
+        }
+        .axit-business-from1{
+            background-color: $white;
+            padding: 20px 30px;
+            margin-bottom: 0;
+            .axit-from-input{
+                margin-bottom: 40px !important;
+                input{
+                    border-bottom: 1px solid #d6d6d6 !important;
+                    border: none;
+                    font-size: 14px;
+                    color: #bdbdbd;
+                    font-family: $open-sans;
+                }
+                &.axit-from-psw{
+                    margin-top: 50px !important;
+                }
+            }
+        }
+        .axit-from-button{
+            background-color: $orange;
+            padding: 20px 30px; 
+            border-radius: 0px 0px 5px 5px;
+            a{
+                margin: 0 auto;
+                display: block;
+                font-size: 15px;
+                color: $white;
+                font-family: $open-sans;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+}

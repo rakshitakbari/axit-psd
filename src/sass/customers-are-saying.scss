@@ -1,0 +1,92 @@
+.customers-are-saying{
+    padding: 100px 0;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
+    .customers-are-saying-title{
+        h2 {
+            font-size: 36px;
+            color: #212121;
+            font-weight: normal;
+            @include media-breakpoint-down(sm) {
+                font-size: 25px;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 20px;
+            }
+        }
+        span {
+            background-color: #ff8b38;
+            width: 50px;
+            height: 2px;
+            display: block;
+            margin: 25px auto;
+        }
+        p {
+            font-size: 14px;
+            color: #86878b;
+            font-family: $open-sans;
+        }
+    }
+    .axit-author-part{
+        justify-content: space-around;
+        margin-top: 50px;
+        @include media-breakpoint-down(md) {
+            margin-top: 20px;
+        }
+        .axit-customers-saying-block{
+            max-width: 290px;
+            @include media-breakpoint-down(md){
+                padding-bottom: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                max-width: 100%;
+            }
+            .axit-customers-saying-content{
+                background-color: #f5f5f5;
+                padding: 20px 10px;
+                position: relative;
+                border-radius: 4px;
+                p{
+                    font-size: 14px;
+                    color: #86878b;
+                    font-family: $open-sans;
+                    font-style: italic;
+                }
+                &:after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 16px solid #f5f5f5;
+                    position: absolute;
+                    bottom: -16px;
+                    left: 23px;
+                    right: 0;
+                }
+            }
+            .axit-author{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                .axit-author-name{
+                    margin-left: 14px;
+                    h3{
+                    font-size: 20px;
+                    color: #333333;
+                    font-weight: bold;
+                    font-family: $open-sans;
+                }
+                    span{
+                        color: #86878b;
+                        font-size: 14px;
+                        font-family: $open-sans;
+                        font-weight: normal;
+
+                    }
+                }
+            }
+        }
+    }
+}

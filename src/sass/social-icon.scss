@@ -1,0 +1,51 @@
+.axit-social-icon{
+    border-bottom: 1px solid #b7b7b7;
+    box-shadow: 0px 1px 2px #b7b7b7;
+    .axit-social-icon-block{
+        padding: 20px 0;
+        .axit-social-icon-text{
+            background-color: $white;
+            @include media-breakpoint-down(md){
+                text-align: center;
+            }
+            h6{
+                font-size: 20px;
+                color: #333333;
+                font-family: $open-sans;
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+                color: #86878b;
+                font-family: $open-sans;
+                font-weight: normal;
+            }
+        } 
+        .axit-social-icon-size{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            @include media-breakpoint-down(md){
+                justify-content: center;   
+            }
+            i{
+                font-size: 48px;
+                padding: 0px 25px;
+                color: #cccccc;
+                @include media-breakpoint-down(md){
+                    font-size: 30px;
+                     padding: 20px 20px;
+                }
+                @include media-breakpoint-down(xs){
+                    font-size: 20px;
+                    padding: 20px 10px;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+   
+}
+    

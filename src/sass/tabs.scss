@@ -1,0 +1,84 @@
+.axit-tabs{
+    background-color: #f5f5f5;
+    padding: 140px 0 116px 0;
+    @include media-breakpoint-down(md){
+         padding: 30px 0;
+    }
+    .axit-tabs-and-content{
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+        .axit-tabs-list{
+            .axit-tabe-3{
+                background-color: #333333;
+                padding: 40px 30px;
+                margin-bottom: 1px;
+                @include media-breakpoint-down(sm){
+                    padding: 20px 30px;
+                }
+                &.active{
+                    background-color: #ff8b38;
+                }
+                span{
+                    font-size: 15px;
+                    font-family: $open-sans;
+                    color: $white;
+                    font-weight: bold;
+                    width: 43px;
+                    display: block;
+                }
+            }
+        }
+        .axit-tabs-content-block{
+            margin-left: 94px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include media-breakpoint-down(sm){
+                margin: 20px 0;
+            
+            }
+            h6{
+                font-size: 20px;
+                font-family: $open-sans;
+                color: $black;
+                font-weight: bold;
+                margin-bottom: 48px;
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-family: $open-sans;
+                color: #86878b;
+                font-weight: normal;
+                &.axit-tabs-content{
+                    margin-bottom: 20px;
+                }
+            }
+            .axit-download-btn{
+                margin-top: 40px;
+                button{ 
+                    font-size: 15px;
+                    font-family: $open-sans;
+                    color: $white;
+                    font-weight: 600; 
+                    background-color: #ff8b38;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .axit-tabs-image{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include media-breakpoint-down(md){
+            justify-content: center;
+        }
+    }
+}

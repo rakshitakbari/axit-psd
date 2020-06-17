@@ -1,0 +1,41 @@
+// img section
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.axit-download-btn{
+    margin-top: 40px !important;
+    button{ 
+        font-size: 15px;
+        font-family: $open-sans;
+        color: $white;
+        font-weight: 600; 
+        background-color: #ff8b38;
+        border-radius: 3px;
+        &:hover{
+            background-color: #ff8b38;
+            color: $white;
+        }
+    }
+}
+::-webkit-input-placeholder { 
+    font-size: 14px;
+    color: #d2d2d2;
+    font-family: $open-sans;
+}
+::-moz-placeholder { 
+    font-size: 14px;
+    color: #d2d2d2;
+    font-family: $open-sans;
+}
+:-ms-input-placeholder { 
+    font-size: 14px;
+    color: #d2d2d2;
+    font-family: $open-sans;
+}
+:-moz-placeholder { 
+    font-size: 14px;
+    color: #d2d2d2;
+    font-family: $open-sans;
+}

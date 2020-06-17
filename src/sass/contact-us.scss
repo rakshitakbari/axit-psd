@@ -1,0 +1,51 @@
+.axit-contect-us{
+  padding: 100px 0 80px;
+    @include media-breakpoint-down(md) {
+      padding: 30px 0;
+    }
+    h2 {
+        font-size: 36px;
+        color: #212121;
+        font-weight: normal;
+        @include media-breakpoint-down(sm) {
+          font-size: 25px;
+        }
+        @include media-breakpoint-down(xs) {
+          font-size: 20px;
+        }
+    }
+    span {
+        background-color: #ff8b38;
+        width: 50px;
+        height: 2px;
+        display: block;
+        margin: 25px auto;
+
+    }
+    p {
+        font-size: 14px;
+        color: #86878b;
+        font-family: $open-sans;
+        font-weight: normal;
+    }
+  .axit-contect-us-form{
+    margin-top: 86px;
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+    .axit-contact-form{
+      margin-bottom: 30px;
+      input, textarea{
+        border-bottom: 1px solid #d6d6d6 !important;
+        border: none;
+        font-family: $open-sans;
+      }
+      textarea{
+        height: 175px;
+        @include media-breakpoint-down(md){
+          height: 36px;
+        } 
+      }
+    }
+  }  
+}

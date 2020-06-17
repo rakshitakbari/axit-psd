@@ -1,0 +1,103 @@
+.axit-pricing-options {
+    background-color: #f5f5f5;
+    padding: 100px 0 14px;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
+  .axit-pricing-options-title {
+    h2 {
+      font-size: 36px;
+      color: #212121;
+      font-weight: normal;
+      @include media-breakpoint-down(sm) {
+        font-size: 25px;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: 20px;
+      }
+    }
+    span {
+      background-color: #ff8b38;
+      width: 50px;
+      height: 2px;
+      display: block;
+      margin: 25px auto;
+    }
+    p {
+      font-size: 14px;
+      color: #86878b;
+      font-family: $open-sans;
+    }
+  }
+  .axit-pricong-options-box{
+    padding: 80px 0 ;
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+    }
+    .axit-pricing {
+        @include media-breakpoint-down(md){
+            padding: 20px 15px;
+        }
+        ul {
+                list-style: none;
+                padding: 0;
+            li {
+                list-style: none;
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid #f5f5f5;
+                font-size: 14px;
+                font-weight: normal;
+                color: #86878b;
+                font-family: $open-sans;
+                background-color: $white;
+                &.header {
+                    background-color: #333333;
+                    color: white;
+                    font-size: 20px;
+                    font-family: $open-sans;
+                    font-weight: bold;
+                }
+                &.grey{
+                    background-color: #333333;
+                    color: $white;
+                    font-size: 94px;
+                    font-weight: bold;
+                    border-bottom: 4px solid #ff8b38;
+                    line-height: 70px;
+                    padding: 20px;
+                    font-family: $font-family-main;
+                    sub{
+                        font-size: 35px;
+                        font-weight: bold;
+                        bottom: -3px;
+                    }
+                    span{
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #797979;
+                        font-family: $open-sans;
+                        display: block;
+                        line-height: 2;
+                        margin-top: 20px;
+                        font-style: italic;
+                    }
+                }
+                &.orange{
+                    background-color: #ff8b38;
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: bold;
+                    font-family: $open-sans;
+                }
+            }
+        }
+        &.axit-basic-enterprise-space{
+            margin-top: 40px;
+            @include media-breakpoint-down(md){
+                margin-top: 0;
+            }    
+        }
+    }   
+  }
+}

@@ -1,0 +1,33 @@
+.axit-header{
+    background-color: $black;
+    .axit-header-logo{
+        img{
+            width: 79px;
+            height: 27px;
+            margin-bottom: 0 !important;
+        }
+    }
+    .navbar-toggler{
+        background-color: $white;
+    }
+    ul.navbar-nav{
+        li{
+            padding: 0 20px;
+            a{
+                font-family: $open-sans;
+                font-weight: 600;
+                font-size: 14px;
+                color: $white !important;
+                transition: .5s;12345
+                
+                &:hover{
+                    background-color: $white;
+                    width: 70px;
+                    height: 2px;
+                    display: block;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}

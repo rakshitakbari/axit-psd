@@ -1,0 +1,57 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// @import "cover";
+@import "comman";
+@import "header";
+@import "index";
+@import "why-this-awesome";
+@import "pricing-options";
+@import "sub-list-section";
+@import "customers-are-saying";
+@import "axure-design";
+@import "slider";
+@import "standard-picture";
+@import "tabs";
+@import "social-icon";
+@import "axit-variables";
+@import "font-awesome";
+@import "about";
+@import "datatable";
+@import "contact-us";
+@import "footer";
+
+// main {
+//     .container {
+//         min-height: 500px;
+//     }
+// }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0em;
+}
+ol,
+ul,
+dl {
+  margin: 0;
+}
+
+body {
+    font-family: 'Raleway';
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,31 @@
+.axit-footer-social-icon{
+    background-color: $black;
+    padding: 10px 0;
+    .axit-footer-social-icon{
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            li{
+                list-style: none;
+                padding: 0 15px;
+                @include media-breakpoint-down(sm){
+                    padding: 0 10px;
+                }
+                i{
+                    color: #cccccc;
+                    font-size: 24px;
+                    @include media-breakpoint-down(sm){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        span{
+            font-size: 12px;
+            color: $white;
+            font-family: $open-sans;
+        }
+    } 
+}

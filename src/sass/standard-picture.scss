@@ -1,0 +1,40 @@
+.axit-standard-picture-section{
+    background-color: #f5f5f5;
+    padding: 80px 0 90px 0;
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+    }
+    .sub-standard-picture-block{
+        margin-top: 30px;
+        @include media-breakpoint-down(md){
+            margin: 0 0 20px;
+        }
+        h6{
+            font-size: 20px;
+            font-family: $open-sans;
+            color: $black;
+            font-weight: bold;
+        }
+        span{
+            background-color: #ff8b38;
+            width: 50px;
+            height: 2px;
+            display: block;
+            margin: 28px 0;
+        }
+        p{
+            font-size: 14px;
+            font-family: $open-sans;
+            color: #86878b;
+            font-weight: normal;
+            &.axit-picture-content{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .axit-picture-image{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
